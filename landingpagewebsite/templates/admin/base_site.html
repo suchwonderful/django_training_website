@@ -3,7 +3,33 @@
 <link href="{% static 'external.css' %}" rel="stylesheet">
 
 {% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+{% block extrastyle %}
+<style>
+body {
+	background: #bdd3f1;
+}
 
+h1 {
+	color: #f12727;
+}
+
+#header {
+	background: #287223;
+}
+
+#branding {
+	width: 90%;
+}
+
+#site-name {
+	float: right;
+}
+
+
+
+</style>
+
+{% endblock %}
 {% block branding %}
 
 
